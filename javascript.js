@@ -61,6 +61,7 @@ washCar.addEventListener("click", () => {
     removeBtn1.parentNode.removeChild(removeBtn1);
     washCar.disabled = false;
     washCar.style.filter = "brightness(100%)";
+    renderTotal(-10);
   });
 });
 
@@ -81,13 +82,14 @@ mawLawn.addEventListener("click", () => {
     border: none;
     color: red;
     bottom: 40px;
-    left: 65px;
+    left: 80px;
   `;
 
   liTask.textContent = keys[1];
   liTotal.textContent = "$ " + values[1];
 
   task.appendChild(liTask);
+  task.appendChild(removeBtn2);
   total.appendChild(liTotal);
 
   notes.style.cssText = `
@@ -108,6 +110,7 @@ mawLawn.addEventListener("click", () => {
     removeBtn2.parentNode.removeChild(removeBtn2);
     mawLawn.disabled = false;
     mawLawn.style.filter = "brightness(100%)";
+    renderTotal(-20);
   });
 });
 
@@ -128,13 +131,14 @@ pullWeeds.addEventListener("click", () => {
     border: none;
     color: red;
     bottom: 40px;
-    left: 65px;
+    left: 80px;
   `;
 
   liTask.textContent = keys[2];
   liTotal.textContent = "$ " + values[2];
 
   task.appendChild(liTask);
+  task.appendChild(removeBtn3);
   total.appendChild(liTotal);
 
   notes.style.cssText = `
@@ -155,6 +159,7 @@ pullWeeds.addEventListener("click", () => {
     removeBtn3.parentNode.removeChild(removeBtn3);
     pullWeeds.disabled = false;
     pullWeeds.style.filter = "brightness(100%)";
+    renderTotal(-30);
   });
 });
 

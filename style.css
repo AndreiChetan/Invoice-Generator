@@ -156,15 +156,15 @@ button#invoice:active {
   text-align: left;
   margin: 0;
   padding-left: 0px;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 #total-el {
+  margin: 0;
   list-style-type: none;
-  line-height: 30px;
+  line-height: 43px;
 }
 
 #sum-el {
   font-size: x-large;
-  
 }
