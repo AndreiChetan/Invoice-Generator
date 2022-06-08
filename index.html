@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoce Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="heading">
+        <h1>Invoice Generator</h1>
+        <p>Thanks for choosing DerpCorp, LLC!</p>
+      </div>
+      <div>
+        <div id="buttons">
+          <button class="order-btn" id="wash-btn" onclick="disabled">
+            Wash Car: <br />
+            $10
+          </button>
+          <button class="order-btn" id="maw-btn">Maw Lawn: $20</button>
+          <button class="order-btn" id="pull-btn">Pull Weeds: $30</button>
+        </div>
+        <div class="summary-box">
+          <div id="left">
+            <p>Task</p>
+            <ul id="task-el"></ul>
+          </div>
+          <div id="right">
+            <p>Total</p>
+            <ul id="total-el"></ul>
+          </div>
+        </div>
+
+        <hr />
+        <div class="summary-box">
+          <div id="left">
+            <p>Notes</p>
+            <p id="notes-el"></p>
+          </div>
+          <div id="right">
+            <p>Total Amount</p>
+            <p id="sum-el">$0</p>
+          </div>
+        </div>
+
+        <button id="invoice"><i></i>Send Invoice</button>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
